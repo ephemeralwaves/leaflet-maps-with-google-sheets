@@ -128,7 +128,11 @@ $(window).on('load', function() {
         var marker = L.marker([point.Latitude, point.Longitude], {icon: icon})
           .bindPopup("<b>" + point['Name'] + '</b><br>' +
           (point['Image'] ? ('<img src="' + point['Image'] + '"><br>') : '') +
-          point['Description']);
+          point['Description'] + '<br><br> <b>Contact: </b>' + '<a href="mailto:'
+          + point['Contact info // Información del contacto'] +
+           '?subject=Mail from our Website">' +
+           point['Contact info // Información del contacto']+ '</a>' +
+           '<br> <b>Availability: </b>'+point['Availability']);
 
         if (layers !== undefined && layers.length !== 1) {
           marker.addTo(layers[point.Group]);
@@ -648,7 +652,7 @@ $(window).on('load', function() {
       var geocoder = L.Control.geocoder({
         expand: 'click',
         position: getSetting('_mapSearch'),
-        
+
         geocoder: L.Control.Geocoder.nominatim({
           geocodingQueryParams: {
             viewbox: '',  // by default, viewbox is empty
