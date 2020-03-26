@@ -1,13 +1,22 @@
 # Leaflet Maps with Google Sheets
-Customize Leaflet maps with a linked Google Sheets template and GeoJSON data on GitHub
+Customized Leaflet maps with a linked Google Sheets template and GeoJSON data on GitHub.
 
-![Preview](preview.jpg)
-
-## Live links (replace with your own)
+## Live links 
 - Leaflet Map https://ephemeralwaves.github.io/leaflet-maps-with-google-sheets/
 - Google Sheets template https://docs.google.com/spreadsheets/d/1bBwCp9oQY6jYMx4mOLNeoB1hiVw8CmqESGPitIizYME/edit#gid=0
 
-## Create your own
+## Developers 
+If you want to contribute you need to run this on a web server
+
+#### Node
+`npm install http-server -g`
+
+Go to your project folder and run 
+`http-server -c-1`
+
+Then go to `localhost:8080` in your browser
+
+## To create your own
 - See video with step-by-step tutorial in *Data Visualization for All* https://datavizforall.org/leaflet-maps-with-google-sheets.html
 
 ## Credits (and licenses)
